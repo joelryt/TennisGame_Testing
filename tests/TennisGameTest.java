@@ -29,7 +29,7 @@ public class TennisGameTest {
 	}
 	
 	@Test
-	public void testTennisGame_EahcPlayerWin4Points_Score_Deuce() throws TennisGameException {
+	public void testTennisGame_EachPlayerWin4Points_Score_Deuce() throws TennisGameException {
 		//Arrange
 		TennisGame game = new TennisGame();
 		
@@ -186,12 +186,12 @@ public class TennisGameTest {
 		String score6 = game.getScore() ;
 		
 		// Assert
-		assertEquals("Midgame score1 incorrect", "love - 15", score1);
-		assertEquals("Midgame score2 incorrect", "love - 30", score2);
-		assertEquals("Midgame score3 incorrect", "love - 40", score3);
-		assertEquals("Midgame score4 incorrect", "15 - 40", score4);
-		assertEquals("Midgame score5 incorrect", "30 - 40", score5);
-		assertEquals("Midgame score6 incorrect", "40 - 40", score6);
+		assertEquals("Midgame1 score1 incorrect", "love - 15", score1);
+		assertEquals("Midgame1 score2 incorrect", "love - 30", score2);
+		assertEquals("Midgame1 score3 incorrect", "love - 40", score3);
+		assertEquals("Midgame1 score4 incorrect", "15 - 40", score4);
+		assertEquals("Midgame1 score5 incorrect", "30 - 40", score5);
+		assertEquals("Midgame1 score6 incorrect", "40 - 40", score6);
 	}
 	
 	
@@ -215,11 +215,11 @@ public class TennisGameTest {
 		String score5 = game.getScore() ;
 		
 		// Assert
-		assertEquals("Midgame score1 incorrect", "15 - love", score1);
-		assertEquals("Midgame score2 incorrect", "30 - love", score2);
-		assertEquals("Midgame score3 incorrect", "40 - love", score3);
-		assertEquals("Midgame score4 incorrect", "40 - 15", score4);
-		assertEquals("Midgame score5 incorrect", "40 - 30", score5);
+		assertEquals("Midgame2 score1 incorrect", "15 - love", score1);
+		assertEquals("Midgame2 score2 incorrect", "30 - love", score2);
+		assertEquals("Midgame2 score3 incorrect", "40 - love", score3);
+		assertEquals("Midgame2 score4 incorrect", "40 - 15", score4);
+		assertEquals("Midgame2 score5 incorrect", "40 - 30", score5);
 	}
 	
 	@Test
